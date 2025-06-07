@@ -1,4 +1,5 @@
-# utils/telegram_utils.py
+# This file is deprecated because we cannot send messages
+# directly to Telegram from the script.
 
 import time
 import requests

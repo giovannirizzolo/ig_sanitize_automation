@@ -14,7 +14,7 @@ class MetaAccountRequester:
     logger = setup_logger("meta_cron_bot")
 
     def __init__(self, headless=True, timeout=15):
-        self.logger.info(f"Stating Meta Account Data Requester [{'HEADLESS' if headless == 'True' else 'HEADED'} MODE]")
+        self.logger.info(f"Starting Meta Account Data Requester [{'HEADLESS' if headless == 'True' else 'HEADED'} MODE]")
         self.timeout = timeout
         self.driver = get_driver(headless)
         self.wait = WebDriverWait(self.driver, self.timeout)
